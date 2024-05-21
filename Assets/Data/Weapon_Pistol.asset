@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 350b8b496520ba8418ac611b91660422, type: 3}
+  m_Name: Weapon_Pistol
+  m_EditorClassIdentifier: 
+  WeaponName: Pistol
+  BulletsInMagazine: 20
+  MagazineCapacity: 20
+  TotalReserveAmmo: 999999
+  ShootType: 0
+  BulletsPerShoot: 1
+  FireRate: 4
+  BurstAvailable: 0
+  BurstActive: 0
+  BurstBulletPerShot: 1
+  BurstFireRate: 0
+  BurstFireDelay: 0.1
+  BaseSpread: 0.25
+  MaxSpread: 2
+  SpreadIncreaseRate: 0.15
+  WeaponType: 0
+  ReloadSpeed: 1
+  EquipSpeed: 1
+  GunDistance: 6
+  CameraDistance: 6
