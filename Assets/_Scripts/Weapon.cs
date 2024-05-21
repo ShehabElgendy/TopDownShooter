@@ -61,6 +61,8 @@ public class Weapon
     private float lastSpreadUpdateTime;
     private float spreadCoolDown = 1;
 
+    public WeaponData WeaponData { get; private set; }
+
     public Weapon(WeaponData weaponData)
     {
         BulletsInMagazine = weaponData.BulletsInMagazine;
@@ -88,6 +90,8 @@ public class Weapon
         CameraDistance = weaponData.CameraDistance;
 
         DefaultFireRate = FireRate;
+
+        this.WeaponData = weaponData;
     }
 
 

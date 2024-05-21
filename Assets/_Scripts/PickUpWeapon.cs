@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpWeapon : Interactable
@@ -8,13 +6,30 @@ public class PickUpWeapon : Interactable
     private WeaponData weaponData;
 
     [SerializeField]
+    private Weapon weapon;
+
+    [SerializeField]
     private BackupWeaponModel[] models;
 
     private PlayerWeaponController weaponController;
 
+    private bool isOldWeapon;
+
     private void Start()
     {
+        if (!isOldWeapon)
+            weapon = new Weapon(weaponData);
+
         UpdateGameObject();
+    }
+
+    public void SetupPickUpWeapon(Weapon weapon, Transform transform)
+    {
+        isOldWeapon = true;
+        this.weapon = weapon;
+        weaponData = weapon.WeaponData;
+
+        this.transform.position = transform.position + new Vector3(0, 0.5f, 0);
     }
 
     [ContextMenu("Update Item Model")]
@@ -40,7 +55,8 @@ public class PickUpWeapon : Interactable
 
     public override void Interaction()
     {
-        weaponController.PickupWeapon(weaponData);
+        weaponController.PickupWeapon(weapon);
+        ObjectPool.Instance.ReturnObject(gameObject);
     }
 
     protected override void OnTriggerEnter(Collider other)
