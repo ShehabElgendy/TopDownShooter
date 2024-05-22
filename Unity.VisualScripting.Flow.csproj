@@ -60,8 +60,8 @@
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\FlowGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\GUI\OnToggleValueChanged.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\Input\OnMouseDown.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\CustomEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\Input\OnMouseDown.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\Animation\BoltNamedAnimationEvent.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Ports\ValueInputDefinition.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Framework\Events\Animation\BoltAnimationEvent.cs" />

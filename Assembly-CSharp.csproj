@@ -63,9 +63,12 @@
     <Compile Include="Assets\_Scripts\Player\PlayerAim.cs" />
     <Compile Include="Assets\_Scripts\Interactable.cs" />
     <Compile Include="Assets\_Scripts\Target.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\_Scripts\Weapon\Weapon.cs" />
     <Compile Include="Assets\_Scripts\CameraManager.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Bullet.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponController.cs" />
     <Compile Include="Assets\_Scripts\Player\Player.cs" />
@@ -722,9 +725,9 @@
       <Project>{1D59C93E-82D0-48BC-782F-A089D3A297AA}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
-      <Project>{0566ECDC-B4F1-9C63-F46D-AD7C7141F90E}</Project>
-      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
+    <ProjectReference Include="Unity.Animation.Rigging.csproj">
+      <Project>{FC876118-B179-21E9-124C-B89A11467E0A}</Project>
+      <Name>Unity.Animation.Rigging</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj">
       <Project>{8D75B719-1F3F-6D68-3D5F-F14A332813FD}</Project>
@@ -894,17 +897,17 @@
       <Project>{F1D67907-B9AC-6EAF-C461-2F5D144B6105}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{DB0B9C90-D9B6-5BCD-E676-B7C9B00ECE01}</Project>
-      <Name>Unity.VSCode.Editor</Name>
+    <ProjectReference Include="Unity.AI.Navigation.Editor.ConversionSystem.csproj">
+      <Project>{0566ECDC-B4F1-9C63-F46D-AD7C7141F90E}</Project>
+      <Name>Unity.AI.Navigation.Editor.ConversionSystem</Name>
     </ProjectReference>
     <ProjectReference Include="Cinemachine.csproj">
       <Project>{ED9CD5E5-EABB-FAE5-05A2-C76AD84F2F0A}</Project>
       <Name>Cinemachine</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.csproj">
-      <Project>{FC876118-B179-21E9-124C-B89A11467E0A}</Project>
-      <Name>Unity.Animation.Rigging</Name>
+    <ProjectReference Include="Unity.VSCode.Editor.csproj">
+      <Project>{DB0B9C90-D9B6-5BCD-E676-B7C9B00ECE01}</Project>
+      <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Universal.Editor.csproj">
       <Project>{74218973-4DE7-60EA-37F2-46D8C3248D99}</Project>
