@@ -664,6 +664,10 @@
       <Project>{28AC4501-065F-9B5C-E106-BF6723A41D28}</Project>
       <Name>Unity.RenderPipelines.Universal.Runtime.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.AI.Navigation.Player.csproj">
+      <Project>{FA125BF6-685A-E484-111C-48AFDBC23777}</Project>
+      <Name>Unity.AI.Navigation.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Burst.Player.csproj">
       <Project>{7B2E4683-1F90-B0C0-7FB5-8FBE204B5E0B}</Project>
       <Name>Unity.Burst.Player</Name>
