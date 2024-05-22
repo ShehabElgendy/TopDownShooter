@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\exampleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\exampleenemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\PickUpWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\PickUpAmmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\ObjectPool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\ObjectPool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,67 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ExampleEnemy.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\ExampleEnemy.cs",
-              "RelativeDocumentMoniker": "Assets\\ExampleEnemy.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\ExampleEnemy.cs",
-              "RelativeToolTip": "Assets\\ExampleEnemy.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAsAAAA",
+              "DocumentIndex": 2,
+              "Title": "EnemyStateMachine.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T00:17:23.036Z",
+              "WhenOpened": "2024-05-22T14:15:16.752Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Interactable.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Interactable.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Interactable.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Interactable.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Interactable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:43:46.642Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PickUpWeapon.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpWeapon.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\PickUpWeapon.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpWeapon.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\PickUpWeapon.cs",
+              "Title": "EnemyState.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyState.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyState.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyState.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyState.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:43:07.583Z"
+              "WhenOpened": "2024-05-22T14:08:53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ObjectPool.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\ObjectPool.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\ObjectPool.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\ObjectPool.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\ObjectPool.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwB8AAAAlAAAA",
+              "DocumentIndex": 0,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAewBoAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T23:26:04.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PickUpAmmo.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\PickUpAmmo.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\PickUpAmmo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T21:48:26.115Z"
+              "WhenOpened": "2024-05-22T14:08:24.93Z",
+              "EditorCaption": ""
             }
           ]
         }

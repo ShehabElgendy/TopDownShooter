@@ -63,9 +63,12 @@
     <Compile Include="Assets\_Scripts\Player\PlayerAim.cs" />
     <Compile Include="Assets\_Scripts\Interactable.cs" />
     <Compile Include="Assets\_Scripts\Target.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyState.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInteraction.cs" />
     <Compile Include="Assets\_Scripts\Weapon\Weapon.cs" />
     <Compile Include="Assets\_Scripts\CameraManager.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyStateMachine.cs" />
     <Compile Include="Assets\_Scripts\Bullet.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponController.cs" />
     <Compile Include="Assets\_Scripts\Player\Player.cs" />
@@ -656,6 +659,10 @@
       <Project>{D91D777B-8061-6A5D-FF96-403CB25B6B41}</Project>
       <Name>Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Animation.Rigging.Player.csproj">
+      <Project>{7BF74E5A-A773-B442-6016-6D242DF248DA}</Project>
+      <Name>Unity.Animation.Rigging.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.Player.csproj">
       <Project>{3F6F851C-BB78-BF79-4BD5-F3096F5CCB1B}</Project>
       <Name>Unity.RenderPipelines.Core.Runtime.Player</Name>
@@ -723,10 +730,6 @@
     <ProjectReference Include="Cinemachine.Player.csproj">
       <Project>{1FCFB6C7-6420-ADC2-211E-1B31CC0718DA}</Project>
       <Name>Cinemachine.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Animation.Rigging.Player.csproj">
-      <Project>{7BF74E5A-A773-B442-6016-6D242DF248DA}</Project>
-      <Name>Unity.Animation.Rigging.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
