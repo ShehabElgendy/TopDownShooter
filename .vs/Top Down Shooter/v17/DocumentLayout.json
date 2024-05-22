@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\pickupweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\PickUpWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\player\\playerweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player\\playerweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\objectpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\_Scripts\\PickUpAmmo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerWeaponController.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAArwFsAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:42:47.277Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -45,10 +36,9 @@
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Interactable.cs",
               "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Interactable.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Interactable.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBIAAAAtAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:34:10.175Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T23:43:46.642Z"
             },
             {
               "$type": "Document",
@@ -58,10 +48,32 @@
               "RelativeDocumentMoniker": "Assets\\_Scripts\\PickUpWeapon.cs",
               "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpWeapon.cs",
               "RelativeToolTip": "Assets\\_Scripts\\PickUpWeapon.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBYAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-19T18:31:55.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-21T23:43:07.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ObjectPool.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\ObjectPool.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\ObjectPool.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\ObjectPool.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\ObjectPool.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwB8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T23:26:04.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PickUpAmmo.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\PickUpAmmo.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\PickUpAmmo.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\PickUpAmmo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T21:48:26.115Z"
             }
           ]
         }
