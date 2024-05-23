@@ -3,15 +3,27 @@
   "WorkspaceRootPath": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\movestate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\movestate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\idlestate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\idlestate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemystatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,43 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EnemyStateMachine.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
+              "DocumentIndex": 0,
+              "Title": "MoveState_Melee.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\MoveState_Melee.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\MoveState_Melee.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\MoveState_Melee.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\MoveState_Melee.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwBgAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-22T14:15:16.752Z",
+              "WhenOpened": "2024-05-22T23:33:19.16Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "IdleState_Melee.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\IdleState_Melee.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\IdleState_Melee.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\IdleState_Melee.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\IdleState_Melee.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB0AAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:31:14.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyMelee.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T23:25:48.57Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyStateMachine.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyStateMachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:15:16.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "EnemyState.cs",
               "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyState.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyState.cs",
               "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyState.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyState.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwBwAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T14:08:53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\Enemy.cs",
               "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
               "RelativeToolTip": "Assets\\_Scripts\\Enemy\\Enemy.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAewBoAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T14:08:24.93Z",
               "EditorCaption": ""
