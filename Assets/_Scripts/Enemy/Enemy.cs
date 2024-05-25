@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     private int currentPatrolIndex;
 
 
+    public Animator anim { get; private set; }
     public NavMeshAgent agent { get; private set; }
     public EnemyStateMachine stateMachine { get; private set; }
 
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
         stateMachine = new EnemyStateMachine();
 
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     protected virtual void Start()
@@ -37,7 +39,7 @@ public class Enemy : MonoBehaviour
 
     public Vector3 GetPatrolDestination()
     {
-        Vector3 destination = patrolPoints[currentPatrolIndex].position;
+        Vector3 destination = patrolPoints[currentPatrolIndex].transform.position;
 
         currentPatrolIndex++;
 
