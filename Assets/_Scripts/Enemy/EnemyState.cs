@@ -8,6 +8,7 @@ public class EnemyState
     protected EnemyStateMachine stateMachine;
     protected string animBoolName;
     protected float stateTimer;
+    protected bool triggerCalled;
 
     public EnemyState(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName)
     {
@@ -19,6 +20,7 @@ public class EnemyState
     public virtual void Enter()
     {
         enemyBase.anim.SetBool(animBoolName, true);
+        triggerCalled = false;
     }
 
     public virtual void Update()
@@ -30,4 +32,6 @@ public class EnemyState
     {
         enemyBase.anim.SetBool(animBoolName, false);
     }
+
+    public void AnimationTriggered() => triggerCalled = true;
 }

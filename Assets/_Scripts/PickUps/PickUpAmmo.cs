@@ -54,7 +54,7 @@ public class PickUpAmmo : Interactable
         float min = Mathf.Min(ammoData.minAmount,ammoData.maxAmount);
         float max = Mathf.Max(ammoData.minAmount,ammoData.maxAmount);
 
-        float randomAmmo = Random.RandomRange(min, max);
+        float randomAmmo = Random.Range(min, max);
 
         return Mathf.RoundToInt(randomAmmo);
     }

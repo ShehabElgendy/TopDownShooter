@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6414cae60d5ed4d40a3c5542d038f96d
+guid: ca29c1e1ed32e3542abee18a65d0c77c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -33,22 +33,22 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Happy Idle
+      name: SwordSlash_1
       takeName: mixamo.com
       internalID: -203655887218126122
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 58
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 1
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
       keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
@@ -341,50 +341,35 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Robot_corrupted_1
-      parentName: enemy_character_1(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-      scale: {x: 100, y: 100, z: 100}
-    - name: hand_corruption
-      parentName: Robot_corrupted_1
-      position: {x: 0.004302773, y: 0.009758403, z: -0.00038355778}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: leg_corruption
-      parentName: Robot_corrupted_1
-      position: {x: -0.0014271497, y: 0.005767602, z: 0.00033531868}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: back_corruption
-      parentName: Robot_corrupted_1
-      position: {x: 0.00036111832, y: 0.013603387, z: -0.0009426425}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: foot_corruption
-      parentName: Robot_corrupted_1
-      position: {x: 0.0013562512, y: 0.00093296974, z: -0.00020434656}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: shoulder_corruption
-      parentName: Robot_corrupted_1
-      position: {x: -0.002382654, y: 0.012844109, z: -0.00019323626}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: head_corruption
-      parentName: Robot_corrupted_1
-      position: {x: 0.0007720506, y: 0.014793174, z: 0.000340476}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Robot_corrupted_emission
-      parentName: Robot_corrupted_1
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
       parentName: enemy_character_1(Clone)
       position: {x: -0.00004120876, y: 0.9286991, z: 0.006705981}
       rotation: {x: -0.00000014403267, y: -0.0000068986055, z: 0.00021984725, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.13203235, y: -0.050845258, z: -0.009717665}
+      rotation: {x: 0.0000035547807, y: 0.019607274, z: 0.9998076, w: 0.00056369667}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: -0, y: 0.40866047, z: 8.588393e-11}
+      rotation: {x: -0.07476415, y: -0.000028100281, z: 0.0007582122, w: 0.99720097}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: -2.7390142e-11, y: 0.36231512, z: -0.0000000030260932}
+      rotation: {x: 0.48935562, y: -0.07776013, z: 0.04996946, w: 0.8671721}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: 0.000000002111646, y: 0.1670665, z: 0.000000004750186}
+      rotation: {x: 0.32539105, y: 0.14625034, z: -0.05101646, w: 0.93280697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: 3.062439e-13, y: 0.063303284, z: -3.0036963e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:RightUpLeg
       parentName: mixamorig:Hips
@@ -466,6 +451,21 @@ ModelImporter:
       position: {x: -0.0062061986, y: 0.01964401, z: -0.007961479}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: -0, y: 0.13865912, z: 5.541058e-10}
+      rotation: {x: 0.070464335, y: 2.6505182e-14, z: 2.2981253e-13, w: 0.9975143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0, y: 0.066231534, z: 0.016163148}
+      rotation: {x: 0, y: -0, z: -6.472675e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: -0, y: 0.19927108, z: 0.04863014}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:RightShoulder
       parentName: mixamorig:Spine2
       position: {x: 0.053502552, y: 0.11938109, z: -0.0034452688}
@@ -506,44 +506,44 @@ ModelImporter:
       position: {x: 0.0008998063, y: 0.02482293, z: -0.0021489777}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:Neck
-      parentName: mixamorig:Spine2
-      position: {x: -0, y: 0.13865912, z: 5.541058e-10}
-      rotation: {x: 0.070464335, y: 2.6505182e-14, z: 2.2981253e-13, w: 0.9975143}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:Head
-      parentName: mixamorig:Neck
-      position: {x: -0, y: 0.066231534, z: 0.016163148}
-      rotation: {x: 0, y: -0, z: -6.472675e-30, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:HeadTop_End
-      parentName: mixamorig:Head
-      position: {x: -0, y: 0.19927108, z: 0.04863014}
+    - name: Robot_corrupted_1
+      parentName: enemy_character_1(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
+      scale: {x: 100, y: 100, z: 100}
+    - name: back_corruption
+      parentName: Robot_corrupted_1
+      position: {x: 0.00036111832, y: 0.013603387, z: -0.0009426425}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:LeftUpLeg
-      parentName: mixamorig:Hips
-      position: {x: -0.13203235, y: -0.050845258, z: -0.009717665}
-      rotation: {x: 0.0000035547807, y: 0.019607274, z: 0.9998076, w: 0.00056369667}
+    - name: foot_corruption
+      parentName: Robot_corrupted_1
+      position: {x: 0.0013562512, y: 0.00093296974, z: -0.00020434656}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:LeftLeg
-      parentName: mixamorig:LeftUpLeg
-      position: {x: -0, y: 0.40866047, z: 8.588393e-11}
-      rotation: {x: -0.07476415, y: -0.000028100281, z: 0.0007582122, w: 0.99720097}
+    - name: hand_corruption
+      parentName: Robot_corrupted_1
+      position: {x: 0.004302773, y: 0.009758403, z: -0.00038355778}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:LeftFoot
-      parentName: mixamorig:LeftLeg
-      position: {x: -2.7390142e-11, y: 0.36231512, z: -0.0000000030260932}
-      rotation: {x: 0.48935562, y: -0.07776013, z: 0.04996946, w: 0.8671721}
+    - name: head_corruption
+      parentName: Robot_corrupted_1
+      position: {x: 0.0007720506, y: 0.014793174, z: 0.000340476}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:LeftToeBase
-      parentName: mixamorig:LeftFoot
-      position: {x: 0.000000002111646, y: 0.1670665, z: 0.000000004750186}
-      rotation: {x: 0.32539105, y: 0.14625034, z: -0.05101646, w: 0.93280697}
+    - name: leg_corruption
+      parentName: Robot_corrupted_1
+      position: {x: -0.0014271497, y: 0.005767602, z: 0.00033531868}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: mixamorig:LeftToe_End
-      parentName: mixamorig:LeftToeBase
-      position: {x: 3.062439e-13, y: 0.063303284, z: -3.0036963e-11}
+    - name: Robot_corrupted_emission
+      parentName: Robot_corrupted_1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shoulder_corruption
+      parentName: Robot_corrupted_1
+      position: {x: -0.002382654, y: 0.012844109, z: -0.00019323626}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5

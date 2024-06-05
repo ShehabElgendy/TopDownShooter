@@ -61,12 +61,16 @@
     <Compile Include="Assets\_Scripts\Weapon\BackupWeaponModel.cs" />
     <Compile Include="Assets\_Scripts\ObjectPool\ObjectPool.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerAim.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyAnimationEvents.cs" />
     <Compile Include="Assets\_Scripts\Interactable.cs" />
     <Compile Include="Assets\_Scripts\Target.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyState.cs" />
     <Compile Include="Assets\_Scripts\Enemy\MoveState_Melee.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\ChaseState_Melee.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerInteraction.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\RecoveryState_Melee.cs" />
     <Compile Include="Assets\_Scripts\Weapon\Weapon.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\AttackState_Melee.cs" />
     <Compile Include="Assets\_Scripts\CameraManager.cs" />
     <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyStateMachine.cs" />
