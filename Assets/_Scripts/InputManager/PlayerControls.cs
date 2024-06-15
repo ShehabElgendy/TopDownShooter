@@ -127,15 +127,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Toggle Weapon Mode"",
-                    ""type"": ""Button"",
-                    ""id"": ""16121dd9-30cf-4332-9d86-7f58b4a471be"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""Interaction"",
                     ""type"": ""Button"",
                     ""id"": ""1cef0148-2bc5-4a46-94c4-4fe84a873cfa"",
@@ -143,6 +134,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ScrollWeapon"",
+                    ""type"": ""Value"",
+                    ""id"": ""c2372adc-79b8-479f-9b22-e1521eda8873"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -313,23 +313,23 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""43976098-b347-441f-98a4-4ab49bb77dab"",
-                    ""path"": ""<Keyboard>/t"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Toggle Weapon Mode"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
                     ""id"": ""4ecd74cc-1334-4fca-b04e-ba67a8d7fddd"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Interaction"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""de1fc5d3-a119-4272-99b3-11e4ac3c6153"",
+                    ""path"": ""<Mouse>/scroll"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ScrollWeapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -351,8 +351,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Character_EquipSlot5 = m_Character.FindAction("Equip Slot - 5", throwIfNotFound: true);
         m_Character_DropCurrentWeapon = m_Character.FindAction("Drop Current Weapon", throwIfNotFound: true);
         m_Character_Reload = m_Character.FindAction("Reload", throwIfNotFound: true);
-        m_Character_ToggleWeaponMode = m_Character.FindAction("Toggle Weapon Mode", throwIfNotFound: true);
         m_Character_Interaction = m_Character.FindAction("Interaction", throwIfNotFound: true);
+        m_Character_ScrollWeapon = m_Character.FindAction("ScrollWeapon", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -425,8 +425,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Character_EquipSlot5;
     private readonly InputAction m_Character_DropCurrentWeapon;
     private readonly InputAction m_Character_Reload;
-    private readonly InputAction m_Character_ToggleWeaponMode;
     private readonly InputAction m_Character_Interaction;
+    private readonly InputAction m_Character_ScrollWeapon;
     public struct CharacterActions
     {
         private @PlayerControls m_Wrapper;
@@ -442,8 +442,8 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         public InputAction @EquipSlot5 => m_Wrapper.m_Character_EquipSlot5;
         public InputAction @DropCurrentWeapon => m_Wrapper.m_Character_DropCurrentWeapon;
         public InputAction @Reload => m_Wrapper.m_Character_Reload;
-        public InputAction @ToggleWeaponMode => m_Wrapper.m_Character_ToggleWeaponMode;
         public InputAction @Interaction => m_Wrapper.m_Character_Interaction;
+        public InputAction @ScrollWeapon => m_Wrapper.m_Character_ScrollWeapon;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -486,12 +486,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Reload.started += instance.OnReload;
             @Reload.performed += instance.OnReload;
             @Reload.canceled += instance.OnReload;
-            @ToggleWeaponMode.started += instance.OnToggleWeaponMode;
-            @ToggleWeaponMode.performed += instance.OnToggleWeaponMode;
-            @ToggleWeaponMode.canceled += instance.OnToggleWeaponMode;
             @Interaction.started += instance.OnInteraction;
             @Interaction.performed += instance.OnInteraction;
             @Interaction.canceled += instance.OnInteraction;
+            @ScrollWeapon.started += instance.OnScrollWeapon;
+            @ScrollWeapon.performed += instance.OnScrollWeapon;
+            @ScrollWeapon.canceled += instance.OnScrollWeapon;
         }
 
         private void UnregisterCallbacks(ICharacterActions instance)
@@ -529,12 +529,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Reload.started -= instance.OnReload;
             @Reload.performed -= instance.OnReload;
             @Reload.canceled -= instance.OnReload;
-            @ToggleWeaponMode.started -= instance.OnToggleWeaponMode;
-            @ToggleWeaponMode.performed -= instance.OnToggleWeaponMode;
-            @ToggleWeaponMode.canceled -= instance.OnToggleWeaponMode;
             @Interaction.started -= instance.OnInteraction;
             @Interaction.performed -= instance.OnInteraction;
             @Interaction.canceled -= instance.OnInteraction;
+            @ScrollWeapon.started -= instance.OnScrollWeapon;
+            @ScrollWeapon.performed -= instance.OnScrollWeapon;
+            @ScrollWeapon.canceled -= instance.OnScrollWeapon;
         }
 
         public void RemoveCallbacks(ICharacterActions instance)
@@ -565,7 +565,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         void OnEquipSlot5(InputAction.CallbackContext context);
         void OnDropCurrentWeapon(InputAction.CallbackContext context);
         void OnReload(InputAction.CallbackContext context);
-        void OnToggleWeaponMode(InputAction.CallbackContext context);
         void OnInteraction(InputAction.CallbackContext context);
+        void OnScrollWeapon(InputAction.CallbackContext context);
     }
 }

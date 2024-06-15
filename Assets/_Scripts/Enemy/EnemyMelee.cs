@@ -13,7 +13,7 @@ public struct AttackData
     public AttackType_Melee AttackType;
 }
 
-public enum AttackType_Melee { Close,Charge}
+public enum AttackType_Melee { Close, Charge }
 
 public class EnemyMelee : Enemy
 {
@@ -22,6 +22,7 @@ public class EnemyMelee : Enemy
     public RecoveryState_Melee RecoveryState { get; private set; }
     public ChaseState_Melee ChaseState { get; private set; }
     public AttackState_Melee AttackState { get; private set; }
+    public DeadState_Melee DeadState { get; private set; }
 
     [Header("Attack Data")]
     public AttackData AttackData;
@@ -39,6 +40,7 @@ public class EnemyMelee : Enemy
         RecoveryState = new RecoveryState_Melee(this, stateMachine, "Recovery");
         ChaseState = new ChaseState_Melee(this, stateMachine, "Chase");
         AttackState = new AttackState_Melee(this, stateMachine, "Attack");
+        DeadState = new DeadState_Melee(this, stateMachine, "");
     }
 
     protected override void Start()
@@ -50,9 +52,14 @@ public class EnemyMelee : Enemy
 
     protected override void Update()
     {
-        base.Update();
-
         stateMachine.currentState.Update();
+    }
+
+    public override void GetHit()
+    {
+        base.GetHit();  
+        if (healthPoints <= 0)
+            stateMachine.ChangeState(DeadState);
     }
 
     public void PullWeapon()

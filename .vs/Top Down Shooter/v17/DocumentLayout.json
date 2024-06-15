@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\player\\playerweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\player\\playerweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemymelee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|c:\\my computer\\work\\unity\\top down shooter\\assets\\_scripts\\enemy\\attackstate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\attackstate_melee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|C:\\My Computer\\Work\\Unity\\Top Down Shooter\\assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F948D9E2-CBAA-268D-E616-F384CF425487}|Assembly-CSharp.csproj|solutionrelative:assets\\_scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EnemyMelee.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAIwAYAAAAcAAAA",
+              "Title": "PlayerWeaponController.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Player\\PlayerWeaponController.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAADwv7AAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T14:02:14.317Z",
+              "WhenOpened": "2024-06-12T05:04:54.181Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AttackState_Melee.cs",
-              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\AttackState_Melee.cs",
-              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\AttackState_Melee.cs",
-              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\AttackState_Melee.cs",
-              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\AttackState_Melee.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAAAE4AAABTAAAA",
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Bullet.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Bullet.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Bullet.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T12:55:15.594Z",
+              "WhenOpened": "2024-06-12T05:01:40.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyMelee.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\EnemyMelee.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAUwDsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T05:01:04.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "C:\\My Computer\\Work\\Unity\\Top Down Shooter\\Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\_Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T04:11:35.709Z",
               "EditorCaption": ""
             }
           ]

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public float ImpactForce;
+
     [SerializeField]
     private GameObject bulletImpactFX;
 
@@ -57,8 +59,9 @@ public class Bullet : MonoBehaviour
             trailRenderer.time -= 2 * Time.deltaTime;
     }
 
-    public void BulletSetup(float flyDistance)
+    public void BulletSetup(float flyDistance, float impactForce)
     {
+        this.ImpactForce = impactForce;
         bulletDisapled = false;
         coll.enabled = true;
         meshRenderer.enabled = true;
@@ -68,6 +71,14 @@ public class Bullet : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Enemy enemy = collision.gameObject.GetComponentInParent<Enemy>();
+        if (enemy != null)
+        {
+            Vector3 force = rb.velocity.normalized * ImpactForce;
+            Rigidbody hitRB = collision.collider.attachedRigidbody; 
+            enemy.GetHit();
+            enemy.HitImpact(force, collision.contacts[0].point, hitRB);
+        }
         CreatImpactFX(collision);
         ReturnBulletToPool();
     }

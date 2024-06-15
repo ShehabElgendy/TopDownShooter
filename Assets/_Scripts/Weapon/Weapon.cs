@@ -34,6 +34,7 @@ public class Weapon
     public int BulletsInMagazine;
     public int MagazineCapacity;
     public int TotalReserveAmmo;
+    public GameObject bulletPrefab;
 
     #region Weapon Generics Variables
     public float ReloadSpeed { get; private set; }
@@ -68,6 +69,8 @@ public class Weapon
         BulletsInMagazine = weaponData.BulletsInMagazine;
         MagazineCapacity = weaponData.MagazineCapacity;
         TotalReserveAmmo = weaponData.TotalReserveAmmo;
+        bulletPrefab = weaponData.bulletPrefab;
+        
 
         FireRate = weaponData.FireRate;
         WeaponType = weaponData.WeaponType;

@@ -11,6 +11,7 @@ public class WeaponData : ScriptableObject
     public int BulletsInMagazine;
     public int MagazineCapacity;
     public int TotalReserveAmmo;
+    public GameObject bulletPrefab;
 
     [Header("Regular Shot")]
     public ShootType ShootType;

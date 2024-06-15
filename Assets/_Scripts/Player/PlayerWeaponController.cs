@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,18 +13,17 @@ public class PlayerWeaponController : MonoBehaviour
     [SerializeField]
     private Weapon currentWeapon;
 
-    [Header("Bullet Details")]
-    [SerializeField]
-    private GameObject bulletPrefab;
-
-    [SerializeField]
-    private float bulletSpeed;
-
     [SerializeField]
     private Transform weaponHolder;
 
     [SerializeField]
     private Transform aim;
+
+    [Header("Bullet Details")]
+    [SerializeField]
+    private float bulletSpeed;
+    [SerializeField]
+    private float bulletImpactForce = 100f;
 
     [Header("Inventory")]
     [SerializeField]
@@ -40,6 +40,8 @@ public class PlayerWeaponController : MonoBehaviour
     private bool isShooting;
 
     private const float REFERENCE_BULLET_SPEED = 20f;
+
+    private Vector2 scrollValue;
 
 
     private void Start()
@@ -154,6 +156,9 @@ public class PlayerWeaponController : MonoBehaviour
             return;
         }
 
+        if (currentWeapon.BulletsInMagazine <= 1)
+            Reload();
+        
         FireSingleBullet();
     }
 
@@ -161,7 +166,7 @@ public class PlayerWeaponController : MonoBehaviour
     {
         currentWeapon.BulletsInMagazine--;
 
-        GameObject newBullet = ObjectPool.Instance.GetObject(bulletPrefab);
+        GameObject newBullet = ObjectPool.Instance.GetObject(currentWeapon.bulletPrefab);
 
         newBullet.transform.position = GunPoint().position;
         newBullet.transform.rotation = Quaternion.LookRotation(GunPoint().forward);
@@ -169,7 +174,7 @@ public class PlayerWeaponController : MonoBehaviour
         Rigidbody rbNewBullet = newBullet.GetComponent<Rigidbody>();
 
         Bullet bulletScript = newBullet.GetComponent<Bullet>();
-        bulletScript.BulletSetup(currentWeapon.GunDistance);
+        bulletScript.BulletSetup(currentWeapon.GunDistance,bulletImpactForce);
 
         Vector3 bulletsDir = currentWeapon.ApplySpread(BulletDirection());
 
@@ -227,7 +232,12 @@ public class PlayerWeaponController : MonoBehaviour
         controls.Character.EquipSlot5.performed += context => EquipWeapon(4);
 
         controls.Character.DropCurrentWeapon.performed += context => DropWeapon();
-        controls.Character.ToggleWeaponMode.performed += context => currentWeapon.ToggleBurst();
+
+        controls.Character.ScrollWeapon.performed += context =>
+        {
+            scrollValue = context.ReadValue<Vector2>();
+            ScrollWeapon();
+        };
 
         controls.Character.Reload.performed += context =>
         {
@@ -239,4 +249,28 @@ public class PlayerWeaponController : MonoBehaviour
         };
     }
     #endregion
+
+    private void ScrollWeapon()
+    {
+        if (!weaponReady || weaponSlots.Count <= 1) return;
+
+        if (scrollValue.y > 0)
+            EquipNextWeapon();
+        else if (scrollValue.y < 0)
+            EquipPreviousWeapon();
+    }
+
+    private void EquipNextWeapon()
+    {
+        int currentIndex = weaponSlots.IndexOf(currentWeapon);
+        int nextIndex = (currentIndex + 1) % weaponSlots.Count;
+        EquipWeapon(nextIndex);
+    }
+
+    private void EquipPreviousWeapon()
+    {
+        int currentIndex = weaponSlots.IndexOf(currentWeapon);
+        int previousIndex = (currentIndex - 1 + weaponSlots.Count) % weaponSlots.Count;
+        EquipWeapon(previousIndex);
+    }
 }

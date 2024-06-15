@@ -9,6 +9,7 @@ public class AttackState_Melee : EnemyState
     private const string ATTACK_ANIMATION_SPEED = "AttackAnimationSpeed";
     private const string ATTACK_INDEX = "AttackIndex";
     private const string RECOVERY_INDEX = "RecoveryIndex";
+    private const string SLASH_ATTACK_INDEX = "SlashAttackIndex";
 
     private const float MAX_ATTACK_DISTANCE = 50f;
     public AttackState_Melee(Enemy enemyBase, EnemyStateMachine stateMachine, string animBoolName) : base(enemyBase, stateMachine, animBoolName)
@@ -22,6 +23,9 @@ public class AttackState_Melee : EnemyState
         enemy.PullWeapon();
         enemy.anim.SetFloat(ATTACK_ANIMATION_SPEED, enemy.AttackData.AnimationSpeed);
         enemy.anim.SetFloat(ATTACK_INDEX, enemy.AttackData.AttackIndex);
+        enemy.anim.SetFloat(SLASH_ATTACK_INDEX, Random.Range(0, 5));
+
+
         enemy.agent.isStopped = true;
         enemy.agent.velocity = Vector3.zero;
         attackMoveSpeed = enemy.AttackData.MoveSpeed;

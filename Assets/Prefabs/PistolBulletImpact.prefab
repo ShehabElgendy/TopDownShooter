@@ -9784,7 +9784,7 @@ GameObject:
   - component: {fileID: 6732292507087631199}
   - component: {fileID: 665851660841608919}
   m_Layer: 0
-  m_Name: BulletImpact
+  m_Name: PistolBulletImpact
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

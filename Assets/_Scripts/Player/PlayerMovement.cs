@@ -33,9 +33,9 @@ public class PlayerMovement : MonoBehaviour
 
     private bool isRunning;
 
-    private static int ISRUNNING_PARAMETER = Animator.StringToHash("isRunning");
-    private static int X_VELOCITY_PARAMETER = Animator.StringToHash("xVelocity");
-    private static int Z_VELOCITY_PARAMETER = Animator.StringToHash("zVelocity");
+    private static readonly int ISRUNNING_PARAMETER = Animator.StringToHash("isRunning");
+    private static readonly int X_VELOCITY_PARAMETER = Animator.StringToHash("xVelocity");
+    private static readonly int Z_VELOCITY_PARAMETER = Animator.StringToHash("zVelocity");
 
 
     private void Start()

@@ -88,6 +88,8 @@
     <Compile Include="Assets\_Scripts\ObjectPool\PooledObject.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerAnimationEvent.cs" />
     <Compile Include="Assets\_Scripts\InputManager\PlayerControls.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\DeadState_Melee.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\Enemy_Ragdoll.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

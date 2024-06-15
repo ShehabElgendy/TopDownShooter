@@ -16,6 +16,7 @@ MonoBehaviour:
   BulletsInMagazine: 40
   MagazineCapacity: 40
   TotalReserveAmmo: 9999999
+  bulletPrefab: {fileID: 2249387060754486091, guid: 6f3319fae9a5b94478bcbc4b509d2d73, type: 3}
   ShootType: 1
   BulletsPerShoot: 1
   FireRate: 8
